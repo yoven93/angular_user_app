@@ -1,0 +1,5 @@
+:host div.post {
+  border: 1px solid red;
+  margin: 5px auto;
+  width: 70%;
+}
