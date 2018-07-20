@@ -25,3 +25,28 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
+We have a list of users but the only information we have on them is their id
+We want to use a web api that will find the user's name and address based on their id
+We also want all the posts by a user
+
+
+
+
+https://jsonplaceholder.typicode.com/ is the api link to use
+
+To get the user info for user with id = 1: send a get request to https://jsonplaceholder.typicode.com/users/1 (try it in the browser)
+
+To get the posts by user with id = 1: send a get request to https://jsonplaceholder.typicode.com/posts?userId=1 (try in browser)
+
+
+
+
+The result we get is in json format and contains loads of useless info.
+
+For the user, we want only the id, name, email, address and posts
+Note that address is an object.... so there should be a dto for address
+user info is obtained using the first url and the posts are obtained using the second url.
+
