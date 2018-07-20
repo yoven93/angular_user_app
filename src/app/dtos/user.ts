@@ -5,6 +5,6 @@ export interface User {
   readonly id: number;
   name?: string;
   email?: string;
-  address: Address;
-  posts: Post[];
+  address?: Address;
+  posts?: Post[];
 }
